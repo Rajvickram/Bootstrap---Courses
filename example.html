@@ -3,33 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BS Example in 02-02-2024</title>
+    <title>Example Program at Bootstrap (12-02-2024)</title>
     <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
-
-    <style>
-        .bg{
-            border: 1px solid skyblue;
-            background-color: burlywood;
-            /* width: 20rem; */
-        }
-    </style>
 </head>
 <body>
+    
 
-
-    <!-- <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 col-lg-3 bg">
-                Row 1 Col 1
+            <header>
+                <nav class="navbar navbar-expand-lg bg-success navbar-dark fixed-top">
+                    <div class="container">
+                        <a href="#" class="navbar-brand text-white">Logo</a>
+
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myId">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="myId">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 border bg-primary text-white">Col 1 Row 1</div>
+            <div class="col-lg-3 col-md-12 border bg-primary text-white">Col 2 Row 1</div>
+            <div class="col-lg-3 col-md-12 border bg-primary text-white">Col 3 Row 1</div>
+            <div class="col-lg-3 col-md-12 border bg-primary text-white">Col 4 Row 1</div>
+        </div>
+    </div>
+
+    <div class="container my-5 border">
+        <div class="row">
+            <div class="col-4">
+                <p class="h1">Raj vickram</p>
             </div>
-            <div class="col-md-12 col-lg-3 bg">
-                Row 1 Col 2
+            <div class="col-4">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">1</li>
+                    <li class="list-inline-item">2</li>
+                    <li class="list-inline-item">3</li>
+                </ul>
             </div>
-            <div class="col-md-12 col-lg-3 bg">
-                Row 1 Col 3
+            <div class="col-4">
+                <blockquote class="blockquote-footer my-5">last Updated on Feb (12-02-2024)</blockquote>
             </div>
-            <div class="col-md-12 col-lg-3 bg">
-                Row 1 Col 4
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col d-flex gap-3 border border-1">
+                <p class="text-dark">Bootstrap</p>
+                <p class="text-primary">React</p>
+                <p class="text-success">JAVA</p>
+                <p class="text-secondary">SQL</p>
+                <p class="text-warning">C#</p>
+                <p class="text-danger">.Net</p>
+                <p class="text-info">SAP ABAP</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container border bg-light">
+        <div class="row">
+            <div class="col">
+                <img src="https://cyberdudenetworks.com/assets/img/training/courses/learn-how-to-build-great-websites-using-bootstrap-in-tamil.jpg" alt="Cyber-Dude-img" class="img-fluid mx-auto d-block" width="250" height="150">
             </div>
         </div>
     </div>
@@ -38,409 +99,229 @@
     <div class="container my-5">
         <div class="row">
             <div class="col">
-                <p class="h2">Raj Vickram</p>
-                <ul class="list-unstyled">
-                    <li class="list-inline-item">1</li>
-                    <li class="list-inline-item">2</li>
-                    <li class="list-inline-item">3</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container">
-        <div class="row bg-primary">
-            <div class="col text-white fw-bold text-center">
-                BootStrap
-            </div>
-        </div>
-    </div>
-
-    <div class="container my-4">
-        <img src="https://cyberdudenetworks.com/assets/img/cyberdude-email.png" alt="cyberdudenetworks-img" title="cyberDude-image" width="250" class="mx-auto d-block">
-    </div>
-
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <table class="table table-bordered table-dark text-center table-hover">
-                    <thead>
+                <table class="table table-bordered text-center table-hover">
+                    <thead class="bg-success text-warning">
                         <tr>
                             <th>S.No</th>
                             <th>Name</th>
                             <th>Course</th>
                         </tr>
                     </thead>
-                    <tbody class="table-success">
-                        <tr>
-                            <td>1</td>
-                            <td>Raj Vickram</td>
-                            <td>Full - Stack</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Aishu</td>
-                            <td>ECE - BackEnd</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Chaina</td>
-                            <td>SAP</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="table-responsive">
-                <table class="table table-bordered table-danger text-center text-dark">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Course</th>
-                            <th>Course</th>
-                            <th>Course</th>
-                            <th>Course</th>
-                            <th>Course</th>
-                            <th>Course</th>
-                            <th>Course</th>
-                            <th>Course</th>
-                            <th>Course</th>
-                            <th>Course</th>
-                            <th>Course</th>
-                        </tr>
-                    </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>Raj</td>
-                            <td>Front-End-Developer</td>
-                            <td>Front-End-Developer</td>
-                            <td>Front-End-Developer</td>
-                            <td>Front-End-Developer</td>
-                            <td>Front-End-Developer</td>
-                            <td>Front-End-Developer</td>
-                            <td>Front-End-Developer</td>
-                            <td>Front-End-Developer</td>
-                            <td>Front-End-Developer</td>
-                            <td>Front-End-Developer</td>
-                            <td>Front-End-Developer</td>
+                            <td>Raj Vickram</td>
+                            <td>FrontEnd & BackEnd</td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>Parithi</td>
-                            <td>.NET</td>
-                            <td>.NET</td>
-                            <td>.NET</td>
-                            <td>.NET</td>
-                            <td>.NET</td>
-                            <td>.NET</td>
-                            <td>.NET</td>
-                            <td>.NET</td>
-                            <td>.NET</td>
-                            <td>.NET</td>
-                            <td>.NET</td>
+                            <td>C# & .Net</td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td>Rishi</td>
-                            <td>Video Editor</td>
-                            <td>Video Editor</td>
-                            <td>Video Editor</td>
-                            <td>Video Editor</td>
-                            <td>Video Editor</td>
-                            <td>Video Editor</td>
-                            <td>Video Editor</td>
-                            <td>Video Editor</td>
-                            <td>Video Editor</td>
-                            <td>Video Editor</td>
-                            <td>Video Editor</td>
+                            <td>Sudhan</td>
+                            <td>Cloud</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Karthi</td>
+                            <td>UI/UX & Frontend</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Rishi Kumar</td>
+                            <td>Editor</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-    </div>
-
-    <header>
-        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
-            <div class="container">
-                <a href="#" class="navbar-brand">LOGO</a>
-
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="myNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Contact us</a>
-                        </li>
-                    </ul>
+        <div class="row">
+            <div class="col">
+                <div class="table-responsive">
+                    <table class="table-responsive table-bordered bg-success text-center">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Course</th>
+                                <th>Course</th>
+                                <th>Course</th>
+                                <th>Course</th>
+                                <th>Course</th>
+                                <th>Course</th>
+                                <th>Course</th>
+                                <th>Course</th>
+                                <th>Course</th>
+                                <th>Course</th>
+                                <th>Course</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Raj</td>
+                                <td>Front-End-Developer</td>
+                                <td>Front-End-Developer</td>
+                                <td>Front-End-Developer</td>
+                                <td>Front-End-Developer</td>
+                                <td>Front-End-Developer</td>
+                                <td>Front-End-Developer</td>
+                                <td>Front-End-Developer</td>
+                                <td>Front-End-Developer</td>
+                                <td>Front-End-Developer</td>
+                                <td>Front-End-Developer</td>
+                                <td>Front-End-Developer</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Parithi</td>
+                                <td>.NET</td>
+                                <td>.NET</td>
+                                <td>.NET</td>
+                                <td>.NET</td>
+                                <td>.NET</td>
+                                <td>.NET</td>
+                                <td>.NET</td>
+                                <td>.NET</td>
+                                <td>.NET</td>
+                                <td>.NET</td>
+                                <td>.NET</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Rishi</td>
+                                <td>Video Editor</td>
+                                <td>Video Editor</td>
+                                <td>Video Editor</td>
+                                <td>Video Editor</td>
+                                <td>Video Editor</td>
+                                <td>Video Editor</td>
+                                <td>Video Editor</td>
+                                <td>Video Editor</td>
+                                <td>Video Editor</td>
+                                <td>Video Editor</td>
+                                <td>Video Editor</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Hello There!</h1>
+            <p class="lead">Welcome to Jumbotron Topics</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium necessitatibus provident amet nesciunt autem. Libero magni quia natus necessitatibus quam.</p>
+            <button class="btn btn-primary rounded-1">Getting Started</button>
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" data-bs-dismiss="alert" class="float-end rounded-pill d-flex align-items-center bg-transparent border-0">&times;</button>
+                <strong>Heads Up!</strong> This alert needs your attention.
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row">
-            <div class="alert alert-success alert-dismissible fade show">
-                <button type="button" data-bs-dismiss="alert">&times;</button>
-                We have a New Message From Your Side!
+            <div class="col">
+                <button class="btn btn-primary">Default Button</button>
+                <button class="btn btn-secondary">Secondary Button</button>
+                <button class="btn btn-success">Success Button</button>
+                <button class="btn btn-warning">Warning Button</button>
+                <button class="btn btn-danger btn-lg">Danger Button</button>
+                <button class="btn btn-info">Info Button</button>
+                <button class="btn btn-link">Link Button</button>
             </div>
         </div>
     </div>
+
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <p>This is Important Topics for <span class="badge bg-primary">BADGE</span></p>
+                <button class="btn btn-outline-success">Total videos <span class="badge bg-success rounded-pill">24</span></button>
+            </div>
+        </div>
+    </div>
+
+   
 
     <div class="container">
-        <button class="btn btn-primary">Sign in</button>
-        <button class="btn btn-secondary">Sign Up <span class="badge bg-primary rounded-4">24</span></button>
-        <button class="btn btn-success">Sign Up</button>
-        <button class="btn btn-danger">Sign Up</button>
-        <button class="btn btn-warning">Sign Up</button>
-        <button class="btn btn-info">Sign Up</button>
-        <button class="btn btn-link">Sign Up</button>
-
-        <div class="btn-group">
-            <button class="btn btn-outline-primary disabled">Roll now</button>
-            <button class="btn btn-outline-primary btn-lg">Roll now</button>
-            <button class="btn btn-outline-primary">Roll now <span class="badge bg-success">NEW</span></button>
-        </div>
-
-        
-    </div> -->
-
-
-
-
-    <!-- Cards Vertical First -->
-
-
-    <!-- <div class="container">
         <div class="row">
-            <div class="col-12 bg-primary text-center">
-                <p class="fs-2 text-white">Raj vickram</p>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <div class="container my-5">
-        <div class="card">
-            <div class="card-header bg-primary text-white text-center">
-                Raj vickram
-            </div>
-            <div class="card-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab asperiores magnam excepturi possimus nobis, doloribus vero, fuga tempora maxime cum reiciendis veniam nihil incidunt et distinctio quasi voluptatem atque ipsam?
-            </div>
-            <div class="card-footer">
-                Couright by Cyber Dude
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="container">
-        <div class="card" style="width: 18rem;">
-            <img src="https://cyberdudenetworks.com/assets/img/training/courses/learn-html-essentials-in-tamil.jpg" alt="HTML - Img" class="card-img-top">
-            <div class="card-body">
-                <h4 class="card-title">Learn HTML - 5 in Tamil</h4>
-                <p class="card-text">Now We are Going to learn about HTML - 5 in Tamil </p>
-                <a href="#" class="btn btn-primary d-block">Enroll Now</a>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Last Updated on FEB - 02-02-204</small>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container my-5">
-        <div class="float-start">
-            <h4>Learn Programing in Tamil</h4>
-            <p>Access the 4K in ULTRA Content in Free on the CYBER _DUDE_IMAGE in Enroll Now</p>
-        </div>
-        <div class="float-end">
-            <a href="#" class="btn btn-danger">Register Now</a>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-
-
-
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="card mb-4 border-primary">
-                    <img src="https://cyberdudenetworks.com/assets/img/training/courses/learn-html-essentials-in-tamil.jpg" alt="cyberDude-image-1" title="Cyber-Dude-HTMl" class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title">Learn HTML - 5 in Tamil</h4>
-                        <span class="badge bg-primary mb-4">Web Development</span>
-                        <span class="badge bg-success">Full Stack</span>
-                        <p class="card-text">Learn All Programing language in Tamil to be Conducted by Cyber Dude</p>
-                        <a href="#" class="btn btn-primary d-block">Enroll Now</a>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last Updated on FEB - 02/24</small>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-12 col-md-4">
-                <div class="card mb-4 border-success">
-                    <img src="https://cyberdudenetworks.com/assets/img/training/courses/learn-css3-in-tamil.jpg" alt="cyberDude-image-2" title="Cyber-Dude-CSS" class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title">Learn CSS - 3 in Tamil</h4>
-                        <span class="badge bg-primary mb-4">Web Development</span>
-                        <span class="badge bg-success mb-4">Full Stack</span>
-                        <p class="card-text">Learn All Programing language in Tamil to be Conducted by Cyber Dude</p>
-                        <a href="#" class="btn btn-primary d-block">Enroll Now</a>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last Updated on FEB - 02/24</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="card mb-4 border-info">
-                    <img src="https://cyberdudenetworks.com/assets/img/training/courses/learn-javascript-in-tamil.jpg" alt="cyberDude-image-3" title="Cyber-Dude-JS" class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title">Learn JAVASCRIPT - in Tamil</h4>
-                        <span class="badge bg-primary mb-4">Web Development</span>
-                        <span class="badge bg-success mb-4">Full Stack</span>
-                        <p class="card-text">Learn All Programing language in Tamil to be Conducted by Cyber Dude</p>
-                        <a href="#" class="btn btn-primary d-block">Enroll Now</a>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated on FEB - 02/24</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-
-
-
-
-    <!-- <div class="container my-5">
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="card mb-4">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv1doHyV_oCWKDugdUoGtMMWtnAkad5gq0DQ&usqp=CAU" alt="Cyber-Dude-Image-1" class="card-img-top" title="Cyber-Dude-BS-imae">
-                    <div class="card-body">
-                        <h4 class="card-title">Learn  HTML & CSS - Full Course (Tutorial) [5 Hours]</h4>
-                        <span class="badge bg-primary mb-4">Web Development</span>
-                        <span class="badge bg-success mb-4">Full - Stack</span>
-                        <p class="card-text">learn All Programing language in Tamil  by this course. This is the best tutorial for learn programming.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last Updated on FEB - 02/24</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="card mb-4">
-                    <img src="https://i.ytimg.com/vi/15vugTUVVVw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAnVDJWntIXVO5mk7SuLhp_fKGOyw" alt="Cyber-Dude-Image-2" title="Cyber-Dude-BS-image-LG" class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title">Bootstrap Course in Tamil From Cyber-Dude-Network <small class="text-muted">Tamil</small></h4>
-                        <span class="badge bg-primary mb-4">Web Development</span>
-                        <span class="badge bg-success mb-4">Full - Stack</span>
-                        <p class="card-text">learn All Programing language in Tamil  by this course. This is the best tutorial for learn programming.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Lastly Completed on JAN - 31/2024</small>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-12 col-md-4">
-                <div class="card mb-4">
-                    <img src="https://i.ytimg.com/vi/F5qevfpiDwM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDiwN1sz4_VFXK4UNZ7SM4WY94zKg" alt="Cyber-Dude-Image-3" title="Cyber-Dude-BS-image-Tp" class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title">Bootstrap Course all Topics are Covered</h4>
-                        <span class="badge bg-primary mb-4">Web Development</span>
-                        <span class="badge bg-success mb-4">Full - Stack</span>
-                        <p class="card-text">learn All Programing language in Tamil  by this course. This is the best tutorial for learn programming.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last Updated on Now..</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="card h-100 mb-2">
-                    <img src="https://www.sahivalue.com/product-images/14+pro+max.jpg/293890000021697778/400x400" alt="Iphone-12-Pro-Max" title="IPhone" class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title">This is IPhone 14 Pro Max</h4>
-                        <span class="badge bg-primary mb-4">New Brand</span>
-                        <span class="badge bg-success mb-4">IPhone</span>
-                        <p class="card-text">Meet the new iPhone 15 Pro and iPhone 15. Buy now. Designed to make a difference. Get to know iPhone 15. 5G. iOS 17. Accessibility features. All-day battery life. Services: No-contact free delivery, EMI available, Shop with Specialists.</p>
-                        <a href="#" class="btn btn-primary d-block">Enroll Now</a>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last Updated on 03-02-2024 (FEB)</small>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-12 col-md-4">
-                <div class="card h-100 mb-2">
-                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1662436253/Croma%20Assets/Communication/Mobiles/Images/247071_s7gm12.png?tr=w-600" alt="One-Plus-img" title="OnePlus" class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title">My New Mobile View is an OnePlus Series!</h4>
-                        <span class="badge bg-primary mb-4">New Series Launched</span>
-                        <span class="badge bg-success mb-4">Nord Series</span>
-                        <p class="card-text">This is a used product. It comes with Charger and Earphone (As Per In Box Accessories). You may expect few scratch</p>
-                        <a href="#" class="btn btn-primary d-block">Click Me</a>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last Released on JAN - 31/01/2024</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
+            <div class="col-lg-4 col-md-12">
                 <div class="card h-100">
-                    <img src="https://oxygendigitalshop.com/media/cache/2500x0/catalog/product/-/o/-original-imagx9eg3nze8ctg_1_1705905981.webp" alt="Samsung-images" title="Samsung-S24-ULTRA" class="card-img-top">
+                    <img src="https://www.apple.com/in/iphone/home/images/meta/iphone__ky2k6x5u6vue_og.png" alt="iphone-img-1">
                     <div class="card-body">
-                        <h4 class="card-title">My New Next Mobile is Samsung Version Launched  by Them.</h4>
-                        <span class="badge bg-primary mb-4">New Series Launched</span>
-                        <span class="badge bg-success mb-4">Nord Series</span>
-                        <p class="card-text">Checkout Samsung Galaxy S24 Ultra latest and official images. You can also get photos of phone's design, camera samples, 360 view of mobile</p>
-                        <a href="#" class="btn btn-primary d-block">Click Me</a>
+                        <h4 class="card-title">This is New Iphone Series</h4>
+                        <p class="card-text">Open Camera, then tap the thumbnail image in the lower-left corner.
+                            Swipe left or right to see the photos you've taken recently.
+                            Tap the screen to show or hide the controls.</p>
+                            <a href="#" class="btn btn-primary">Click Here</a>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Latest Model Launched on (03-02-2024)</small>
+                        <span class="text-muted">Latest Model Updated on this serries (21-0-12-2023)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <div class="card h-100">
+                    <img src="https://stadt-bremerhaven.de/wp-content/uploads/2023/12/S24-Ultra.jpg" alt="Samsung-img">
+                    <div class="card-body">
+                        <h4 class="card-title">This is New Samsung Series</h4>
+                        <p class="card-text">The event will see the launch of 3 new smartphones: Galaxy S24, Galaxy S24+ and Galaxy S24 Ultra. The event is set to take place on January 17 at 1 pm ET (11:30 PM IST)</p>
+                        <a href="#" class="btn btn-primary">Click Here</a>
+                        <div class="card-footer">
+                            <span class="text-muted">Latest Model Updated on (01-01-2024)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <div class="card h-100">
+                    <img src="https://www.digitaltrends.com/wp-content/uploads/2023/01/oneplus-11-green-in-hand-2.jpg?fit=2000%2C1333&p=1" alt="Oneplus-img">
+                    <div class="card-body">
+                        <h4 class="card-title">This is New Model in OnePlus Series</h4>
+                        <p class="card-text">What is OnePlus? Headquartered in Shenzhen, Guangdong, OnePlus is a Chinese smartphone brand founded by former Oppo vice-president Pete Lau and Carl Pei in December 2013</p>
+                        <a href="#" class="btn btn-primary">Click Here</a>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-muted">Latest Model Updated on (2013)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="card">
+            <div class="row">
+                <div class="col-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCZlf5lc5tX-0gY-y94pGS0mQdL-D0lCH2OQ&usqp=CAU" alt="Images-1"
+                    class="img-fluid card-img">
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <h4 class="card-title">Normal Images to be Upload</h4>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam provident atque laudantium repellendus dicta perferendis.</p>
+                        <div class="blockquote-footer float-end">Latest Pic to be build our Website</div>
+                        <div class="clearfix"></div>
+                        <a href="#" class="btn btn-success d-block">Check Here</a>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-muted">Normal to Photo be Updated on this week</span>
                     </div>
                 </div>
             </div>
@@ -448,13 +329,15 @@
     </div>
 
 
-    <div class="container">
-    <div class="alert alert-success alert-dismissible fade show">
-        <button type="button" data-bs-dismiss="alert" class="float-end bg-transparent border border-0 fw-bold fs-3 ">&times;</button>
-        <h4>Welcome to Our Page</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt debitis ex veniam, explicabo numquam illum ab alias consectetur ad sit cumque aut a doloribus laboriosam eligendi. Doloremque, ullam? Esse, nobis.</p>
-    </div>
-</div>
+    
+
+
+    
+
+
+
+
+
 
 
 

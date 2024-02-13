@@ -3,18 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BS CAROUSEL SLIDERS - 05-02-2024</title>
+    <title>Carousel Slider Example (13-02-2024)</title>
     <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
 </head>
 <body>
-   
-    
     
 
-    
+   <div class="carousel slide carousel-fade" id="myCarousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://1.bp.blogspot.com/-4Xh1JeXRe1Y/XHQKJFsXPBI/AAAAAAAAAlg/ZebY860MIzc5PpJcAoRK73IvTCPtzcDLgCLcBGAs/s640-rw/Chidambaram%2BNataraja%2Btemple%2Btowers%2B%2528gopuram%2529.jpg" alt="First-image" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="https://th-i.thgim.com/public/incoming/uej3vh/article67649830.ece/alternates/FREE_1200/2786_18_12_2023_11_19_8_1_CHIDAMBARAM1.JPEG" alt="Second-img" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="https://i.ytimg.com/vi/D_lo1UCVJgI/sddefault.jpg" alt="Third-img" class="d-block w-100">
+        </div>
+    </div>
 
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
 
-
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"  data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+   </div>
 
 
 
