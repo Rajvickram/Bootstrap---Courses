@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page Using Bootstrap</title>
+    <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+            <div class="container">
+                <a href="#" class="navbar-brand fw-bold fs-4"><i class="bi bi-bootstrap-fill me-2"></i>Bootstrap Tamil</a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavBtn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="NavBtn">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="/Example - 2.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Register.html" target="_blank" class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown ms-2">
+                            <button type="button" class="btn btn-outline-secondary text-white bg-transparent dropdown-toggle" data-bs-toggle="dropdown">Register</button>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" class="dropdown-item">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Resources</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Communicate</a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a href="#" class="dropdown-item">New User</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    
+    <div class="container form-build" id="valid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header text-center text-secondary build">
+                        Build Register Forms
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="post">
+                            <label for="name">Enter Full Name</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter Full Name" required>
+
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="Phone">Mobile Number</label>
+                                    <input type="number" name="Phone" id="Phone" class="form-control" placeholder="+917010986623" required>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="Email">Email Address</label>
+                                    <input type="email" name="Email" id="Email" class="form-control" placeholder="You@gmail.com" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="PWD">Password</label>
+                                    <input type="password" name="PWD" id="PWD" class="form-control" placeholder="password" required>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="CPWD">Confirm Password</label>
+                                    <input type="password" name="CPWD" id="CPWD" class="form-control" placeholder="CPWD" required>
+                                </div>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" name="Agreement" id="Agreement" class="form-check-input" required>
+                                <label for="Agreement">I Accepted For Terms & Condition</label>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <button type="reset" class="btn btn-secondary">Reset</button>
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
+</body>
+</html>

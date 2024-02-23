@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Request Form using Bootstrap</title>
+    <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+    <section class="bg-hero pt-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="mt-5">
+                        <img src="https://cdn-icons-png.flaticon.com/512/7420/7420730.png" alt="Tutorial-icon-tamil" class="img-fluid" width="200">
+                        <h1>Have a tutorial request?</h1>
+                        <p class="lead">Share  your idea with us and we will do our best to assist you!</p>
+                    </div>
+                </div>
+
+
+                <div class="col-8 mt-5 text-dark">
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="" method="post">
+                                <div class="row mb-3">
+                                    <div class="col-6">
+                                        <label for="name" class="form-check-label text-dark">Full Name</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"></span>
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Full name">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="email" class="form-check-label text-dark">Email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"></span>
+                                            <input type="email" name="email" id="email" class="form-control" placeholder="you@gmail.com">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-2">
+                                    <label for="prev-learnt">Previously, what did you learned from this channel?</label>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-check">
+                                                <input type="checkbox" name="courses[]" id="courses" class="form-check-input" value="HTML5">
+                                                <label for="courses" class="form-check-label">HTML5 Course</label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input type="checkbox" name="courses[]" id="courses" class="form-check-input" value="CSS3">
+                                                <label for="courses" class="form-check-label">CSS3 Course</label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input type="checkbox" name="courses[]" id="courses" class="form-check-input" value="HTML5">
+                                                <label for="courses" class="form-check-label">CSS Flexbox</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="form-check">
+                                                <input type="checkbox" name="courses[]" id="courses" class="form-check-input" value="Bootstrap-course">
+                                                <label for="courses" class="form-check-label">Bootstrap Course</label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input type="checkbox" name="courses[]" id="courses" class="form-check-input" value="JavaScript-course">
+                                                <label for="courses" class="form-check-label">JavaScript Course</label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input type="checkbox" name="courses[]" id="courses" class="form-check-input" value="Others">
+                                                <label for="courses" class="form-check-label">Others</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="isSubscribe">Did You Subscribe to the channel?</label>
+
+                                        <div class="form-check">
+                                            <input type="radio" name="isSubscribe" id="isSubscribe" value="yes" class="form-check-input">
+                                            <label for="isSubscribed" class="form-check-label">Yes</label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input type="radio" name="isSubscribe" id="isSubscribe" value="No" class="form-check-input">
+                                            <label for="isSubscribed" class="form-check-label">No</label>
+                                        </div>
+
+                                        <label for="year">From Which year are you with us?</label>
+                                        <select name="year" id="year" class="form-control">
+                                            <option value="">--select Year--</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="tutorial_request">Do you have any tutorial request</label>
+
+                                        <textarea name="tutorial_request" id="tutorial_request" rows="5" class="form-control" placeholder="Share With us...."></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="dedicated_app">Do you want to create a dedicated app for this</label>
+
+
+                                        <div class="form-inline">
+                                            <div class="form-check-inline">
+                                                <input type="radio" name="dedicated_app" id="dedicated_app" class="form-check-input" value="Yes">
+                                                <label for="dedicated_app" class="form-check-label">Yes</label>
+                                            </div>
+
+                                            <div class="form-check-inline">
+                                                <input type="radio" name="dedicated_app" id="dedicated_app" class="form-check-input" value="No">
+                                                <label for="dedicated_app" class="form-check-label">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
+    <script src="Two.Js"></script>
+</body>
+</html>

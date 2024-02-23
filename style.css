@@ -1,4 +1,9 @@
-.bg{
-    border: 1px solid red;
-    background-color: bisque;
+.form-build{
+    color: cadetblue;
+    margin-top: 10rem;
 }
+
+.card{
+    border: 1px solid tomato;
+}
+

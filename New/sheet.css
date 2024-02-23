@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.image-slider{
+    width: 80%;
+    height: 80%;
+    background-size: 100% 100%;
+    box-shadow: 20px 20px 10px black;
+    animation: slider 20s linear infinite;
+}
+
+@keyframes slider{
+    0%{
+        background-image: url(tree-736885_1280.jpg);
+    }
+    25%{
+        background-image: url(flowers-276014_640.jpg);
+    }
+    50%{
+        background-image: url(free-nature-images.jpg);
+    }
+    75%{
+        background-image: url(istockphoto-1146517111-612x612.jpg);
+    }
+    100%{
+        background-image: url(nature-image-for-website.jpg);
+    }
+}

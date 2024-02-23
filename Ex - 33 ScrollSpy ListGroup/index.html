@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll SPY List Group using Bootstrap</title>
+    <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
+</head>
+<body>
+    
+
+    <header>
+        <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+            <div class="container">
+                <a href="#" class="navbar-brand"><i class="bi bi-bootstrap me-2"></i> Boootstrap</a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myBtn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collpase navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#homesection" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#aboutsection" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#coursesection" class="nav-link">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contactsection" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+    
+
+
+    <div class="container my-2">
+        <div class="row">
+            <div class="col-4">
+                <ul class="list-group" id="myList">
+                    <a href="#intro" class="list-group-item list-group-item-action">Introduction to Bootstrap</a>
+                    <a href="#grids" class="list-group-item list-group-item-action">Bootstrap Grids</a>
+                    <a href="#components" class="list-group-item list-group-item-action">Bootstrap Components</a>
+                    <a href="#utilities" class="list-group-item list-group-item-action">Bootstrap Utilities</a>
+                    <a href="#whats-next" class="list-group-item list-group-item-action">What's t learn next?</a>
+                </ul>
+            </div>
+
+            <div class="col-8" style="height: 500px; overflow-y: scroll;" data-bs-spy="scroll" data-bs-target="#myList" data-bs-offset="140" tabindex="0">
+                <div>
+                    <h4 id="intro">Introduction to Bootstrap</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ex deleniti eum sunt adipisci cumque, velit explicabo et architecto eaque! Voluptatum amet quos consectetur temporibus et, commodi nihil aut iure.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                </div>
+
+                <div>
+                    <h4 id="grids">Bootstrap Grids</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ex deleniti eum sunt adipisci cumque, velit explicabo et architecto eaque! Voluptatum amet quos consectetur temporibus et, commodi nihil aut iure.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                </div>
+
+                <div>
+                    <h4 id="components">Bootstrap Components</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ex deleniti eum sunt adipisci cumque, velit explicabo et architecto eaque! Voluptatum amet quos consectetur temporibus et, commodi nihil aut iure.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                </div>
+
+                <div>
+                    <h4 id="utilities">Bootstrap Utilities</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ex deleniti eum sunt adipisci cumque, velit explicabo et architecto eaque! Voluptatum amet quos consectetur temporibus et, commodi nihil aut iure.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                </div>
+
+
+                <div>
+                    <h4 id="whats-next">What's t learn next?</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ex deleniti eum sunt adipisci cumque, velit explicabo et architecto eaque! Voluptatum amet quos consectetur temporibus et, commodi nihil aut iure.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis quasi dolor totam, repellat fuga accusantium nisi iusto facere esse non exercitationem dolorem ea rerum, amet deleniti eveniet, pariatur est!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
+
+    
+</body>
+</html>

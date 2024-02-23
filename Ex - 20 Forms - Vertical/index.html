@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form (16-02-2024)</title>
+    <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
+</head>
+<body>
+    
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=chidambaram&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/124/"></a><br>
+                </div>
+            </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        Contact Page
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="post">
+                            <label for="name">Full Name <span class="text-danger">*</span></label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your FullName" required>
+
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <label for="gender">Gender</label>
+                                    <input type="radio" name="gender" class="form-check-input"
+                                    value="male" id="gender_male">
+                                    <label for="gender_male" class="form-check-label">Male</label>
+
+                                  <input type="radio" name="gender" class="form-check-input" value="female" id="gender_female">
+                                  <label for="gender_female">Female</label>
+
+                                  <input type="radio" name="gender" class="form-check-input" id="gender_others" value="others">
+                                  <label for="gender_others">Others</label>
+                                </div>
+                            </div>
+
+                            <label for="Phone">Mobile Number</label>
+                            <input type="number" class="form-control" id="Phone" name="Phone" placeholder="+917010986623" required>
+
+
+                            <label for="Email">Email</label>
+                            <input type="email" id="Email" class="form-control" name="Email" placeholder="You@gmail.com">
+
+                            <small id="emailhelp">We'll never share Your Mail  with anyone else.</small>
+
+
+                            <label for="source">Came From</label>
+                            <select name="source" id="source" class="form-control">
+                                <option value="">Select Source</option>
+                                <option value="Google">Google</option>
+                                <option value="FaceBook">FaceBook</option>
+                                <option value="YouTube">YouTube</option>
+                            </select>
+
+
+                            <label for="msg">Message</label>
+                            <textarea name="msg" id="msg" rows="3" placeholder="Enter Your Message" class="form-control"></textarea>
+
+                            <div class="form-control">
+                                <div class="from-check text-center">
+                                    <input type="checkbox" name="agree" id="agree" value="Agreement" class="form-check-input">
+                                    <label for="agree" class="form-check-label">Agreement</label>
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn-primary d-block my-3">Submit</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    
+
+
+
+
+
+
+
+    <hr class="my-4">
+
+
+
+
+
+
+
+
+
+
+    <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
+</body>
+</html>
