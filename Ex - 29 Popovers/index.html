@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PopOvers using Bootstrap</title>
+    <title>Popovers Using Bootstrap</title>
     <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
 </head>
 <body>
     
 
-
-
-
-    <div class="container my-5">
+    <div class="container">
         <div class="row">
-            <div class="col-3">
-                <button id="Welcome" class="btn btn-warning" data-bs-toggle="popover" data-bs-title="Welcome Offer! Enjoy" data-bs-trigger="focus" data-bs-content="Grab These coupon codes for next three transaction" data-bs-placement="bottom" data-bs-container="body">Welcome Offer - 1</button>
+            <div class="col">
+                <button id="welcome" class="btn btn-warning" data-bs-toggle="popover" title="Welcome Offer Enjoy your Data!" data-bs-content="Grab The coupon codes next three transition" data-bs-trigger="focus" data-bs-placement="right">Welcome Offer</button>
+                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Top popover">
+                    Popover on top
+                  </button>
             </div>
         </div>
     </div>
@@ -34,20 +34,16 @@
 
 
 
-
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
 
-    <script>
-        let triggerElement = document.getElementById("Welcome");
 
-        let popover = new bootstrap.Popover(triggerElement, {
-            trigger: "focus"
-        });
+    <script>
+        let trigger = document.getElementById("welcome")
+
+
+        let popover = new bootstrap.Popover(trigger)
+
     </script>
 </body>
 </html>
