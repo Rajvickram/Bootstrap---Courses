@@ -3,22 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popovers Using Bootstrap</title>
+    <title>Example sum in BootStrap using PopOvers</title>
     <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
 </head>
 <body>
     
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <button id="welcome" class="btn btn-warning" data-bs-toggle="popover" title="Welcome Offer Enjoy your Data!" data-bs-content="Grab The coupon codes next three transition" data-bs-trigger="focus" data-bs-placement="right">Welcome Offer</button>
-                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Top popover">
-                    Popover on top
-                  </button>
+
+    <header>
+        <nav class="navbar navbar-dark bg-secondary navbar-expand-lg">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    LOGO
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbtn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mynavbtn">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Listings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
 
 
@@ -34,16 +52,11 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+
+
+
+
+
     <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
-
-
-    <script>
-        let trigger = document.getElementById("welcome")
-
-
-        let popover = new bootstrap.Popover(trigger)
-
-    </script>
 </body>
 </html>
