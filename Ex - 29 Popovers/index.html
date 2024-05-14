@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example sum in BootStrap using PopOvers</title>
+    <title>PopOver Using Bootstrap</title>
     <link rel="stylesheet" href="/Bootstrap - Links/css/bootstrap.min.css">
 </head>
 <body>
     
 
-
     <header>
-        <nav class="navbar navbar-dark bg-secondary navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
             <div class="container">
-                <a href="#" class="navbar-brand">
-                    LOGO
-                </a>
+                <a href="#" class="navbar-brand">Bootstrap Tamil</a>
 
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbtn">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+
                 <div class="collapse navbar-collapse" id="mynavbtn">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Home</a>
+                        <li class="nav-link">
+                            <a href="#" class="nav-link active">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Listings</a>
+                        <li class="nav-link">
+                            <a href="#" class="nav-link">About</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-link">
                             <a href="#" class="nav-link">Contact us</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#" class="nav-link">Sign Up</a>
                         </li>
                     </ul>
                 </div>
@@ -40,6 +41,9 @@
 
 
 
+    <div class="container mt-2 text-center">
+        <button id="welcome" type="button" class="btn btn-warning" title="Welcome to our Page" data-bs-content="this page will be cover over all they will be made from it to created the more topics and they will having some offer to get the same courses of an same page" data-bs-trigger="focus" data-bs-placement="left">Welcome Offer</button>
+    </div>
 
 
 
@@ -52,11 +56,12 @@
 
 
 
-
-
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="/Bootstrap - Links/js/bootstrap.min.js"></script>
+    <script>
+        let trigger = document.getElementById('welcome')
+
+        let pop = new bootstrap.Popover(trigger)
+    </script>
 </body>
 </html>
